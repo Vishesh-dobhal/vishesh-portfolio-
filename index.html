@@ -138,6 +138,11 @@ nav.stuck{background:rgba(9,9,11,.92);backdrop-filter:blur(20px);border-bottom:1
 .browser-screen img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
 .browser-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 55%,var(--surface2) 100%);pointer-events:none;}
 
+/* MORE PROJECTS BUTTON */
+.more-proj-wrap{display:flex;justify-content:center;margin-top:48px;}
+.btn-more{display:inline-flex;align-items:center;gap:10px;padding:15px 34px;background:var(--surface);color:var(--text);font-size:14px;font-weight:500;border-radius:9px;border:1px solid var(--border2);transition:all .25s;}
+.btn-more:hover{border-color:var(--accent);color:var(--accent2);background:var(--surface2);transform:translateY(-2px);box-shadow:0 12px 32px rgba(99,102,241,.2);}
+
 /* STATS */
 .stats-band{background:var(--accent);padding:56px 48px;}
 .stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);}
@@ -295,7 +300,7 @@ footer p{font-size:13px;color:var(--muted);}
       <div class="ind2"><span class="ts">"Chat Agents"</span><span class="tmut">,</span></div>
       <div class="ind2"><span class="ts">"AI Integration"</span><span class="tmut">,</span></div>
       <div class="ind"><span class="tmut">],</span></div>
-      <div class="ind"><span class="tk">projects</span><span class="tmut">:</span> <span class="tv">4</span><span class="tmut">,</span></div>
+      <div class="ind"><span class="tk">projects</span><span class="tmut">:</span> <span class="tv">6</span><span class="tmut">,</span></div>
       <div class="ind"><span class="tk">status</span><span class="tmut">:</span> <span class="ts">"open to work"</span></div>
       <div><span class="tmut">}</span></div>
       <div>&nbsp;</div>
@@ -304,6 +309,7 @@ footer p{font-size:13px;color:var(--muted);}
   </div>
   <div class="scroll-cue">
     <span>Scroll</span><div class="scroll-line"></div>
+    
   </div>
 </section>
 
@@ -397,13 +403,13 @@ footer p{font-size:13px;color:var(--muted);}
       <p class="sec-p">Live products built and deployed — click any project to visit the live site.</p>
     </div>
 
-    <div class="projects-list">
+    <div class="projects-list" id="projectsList">
 
       <!-- PROJECT 1: MANOVSIS -->
       <div class="proj-item" data-reveal>
         <div class="proj-item-inner">
           <div class="proj-info">
-            <div class="proj-num">01 / 04</div>
+            <div class="proj-num">01 / 06</div>
             <div class="proj-type">Full-Stack Web App · Real Estate · Bangalore</div>
             <h3 class="proj-h">Manovsis Realty India</h3>
             <p class="proj-p">Complete web platform for a Bangalore-based construction and real estate company. Built from scratch — marketing site, blog system, client login portal, admin CMS, testimonials, contact with Brevo email integration, SEO, and more. The full end-to-end product.</p>
@@ -432,7 +438,7 @@ footer p{font-size:13px;color:var(--muted);}
       <div class="proj-item" data-reveal>
         <div class="proj-item-inner">
           <div class="proj-info">
-            <div class="proj-num">02 / 04</div>
+            <div class="proj-num">02 / 06</div>
             <div class="proj-type">Platform · EdTech · Tutoring Marketplace</div>
             <h3 class="proj-h">Namate24</h3>
             <p class="proj-p">Online and home tutoring platform connecting students with expert tutors across all subjects and grades. A full marketplace with tutor discovery, personalised matching, and a clean user experience designed for both students and tutors worldwide.</p>
@@ -460,7 +466,7 @@ footer p{font-size:13px;color:var(--muted);}
       <div class="proj-item" data-reveal>
         <div class="proj-item-inner">
           <div class="proj-info">
-            <div class="proj-num">03 / 04</div>
+            <div class="proj-num">03 / 06</div>
             <div class="proj-type">Framer Website · Luxury Brand · Mumbai</div>
             <h3 class="proj-h">eCloud — Premium Home Audio</h3>
             <p class="proj-p">Premium Framer website for eCloud Integrated Technologies — curators of luxury home theatre systems and architectural audio in Mumbai. Cinematic design, private demo booking via WhatsApp, product catalogue for Perlisten and Pylon Audio brands, and a refined brand experience.</p>
@@ -488,7 +494,7 @@ footer p{font-size:13px;color:var(--muted);}
       <div class="proj-item" data-reveal>
         <div class="proj-item-inner">
           <div class="proj-info">
-            <div class="proj-num">04 / 04</div>
+            <div class="proj-num">04 / 06</div>
             <div class="proj-type">Framer SaaS Website · Supply Chain · Chicago</div>
             <h3 class="proj-h">Decision Spot</h3>
             <p class="proj-p">Marketing website for Decision Spot — a supply chain design and optimization SaaS platform powered by Foresta AI. Listed as a Representative Vendor in the 2026 Gartner® Market Guide. Built with Framer with full CMS, blog, case studies, use cases, and a polished enterprise-grade design system.</p>
@@ -512,14 +518,75 @@ footer p{font-size:13px;color:var(--muted);}
         </div>
       </div>
 
+      <!-- PROJECT 5: VKD BAKES -->
+      <div class="proj-item" data-reveal>
+        <div class="proj-item-inner">
+          <div class="proj-info">
+            <div class="proj-num">05 / 06</div>
+            <div class="proj-type">Web App · Bakery · E-commerce</div>
+            <h3 class="proj-h">VKD Bakes</h3>
+            <p class="proj-p">Freshly baked happiness — a warm, appetite-driving web presence for a home bakery brand. Product showcase, ordering flow, and a design language built to make every cake and pastry look irresistible on screen.</p>
+            <div class="proj-stack">
+              <span class="proj-tech">Web App</span><span class="proj-tech">Bakery</span>
+              <span class="proj-tech">Product Showcase</span><span class="proj-tech">Ordering</span>
+              <span class="proj-tech">Responsive Design</span>
+            </div>
+            <a href="https://vkdbakes.vercel.app/" target="_blank" class="proj-link">Visit vkdbakes.vercel.app ↗</a>
+          </div>
+          <div class="proj-browser">
+            <div class="browser-bar">
+              <div class="b-dots"><div class="b-dot" style="background:#FF5F57"></div><div class="b-dot" style="background:#FFBD2E"></div><div class="b-dot" style="background:#28C840"></div></div>
+              <div class="b-url">vkdbakes.vercel.app</div>
+            </div>
+            <div class="browser-screen">
+              <img src="https://vkdbakes.vercel.app/opengraph-image.png" alt="VKD Bakes" loading="lazy" onerror="this.parentElement.style.display='none'"/>
+              <div class="browser-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 6: KUBERA CAPITAL -->
+      <div class="proj-item" data-reveal>
+        <div class="proj-item-inner">
+          <div class="proj-info">
+            <div class="proj-num">06 / 06</div>
+            <div class="proj-type">Web Platform · Wealth Management · Bangalore</div>
+            <h3 class="proj-h">Kubera Capital</h3>
+            <p class="proj-p">Boutique wealth management website for Kubera Capital, Bangalore. A refined, trust-driven design built to reflect the precision and discretion expected from a premium financial advisory brand.</p>
+            <div class="proj-stack">
+              <span class="proj-tech">Web Platform</span><span class="proj-tech">Fintech</span>
+              <span class="proj-tech">Wealth Management</span><span class="proj-tech">Brand Identity</span>
+              <span class="proj-tech">SEO</span>
+            </div>
+            <a href="https://www.kuberawealth.capital/" target="_blank" class="proj-link">Visit kuberawealth.capital ↗</a>
+          </div>
+          <div class="proj-browser">
+            <div class="browser-bar">
+              <div class="b-dots"><div class="b-dot" style="background:#FF5F57"></div><div class="b-dot" style="background:#FFBD2E"></div><div class="b-dot" style="background:#28C840"></div></div>
+              <div class="b-url">kuberawealth.capital</div>
+            </div>
+            <div class="browser-screen">
+              <img src="https://www.kuberawealth.capital/opengraph-image.png" alt="Kubera Capital" loading="lazy" onerror="this.parentElement.style.display='none'"/>
+              <div class="browser-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <div class="more-proj-wrap" data-reveal>
+      <a href="https://github.com/visheshdobhal" target="_blank" class="btn-more">More Projects ↗</a>
+    </div>
+
   </div>
 </section>
 
 <!-- STATS -->
 <div class="stats-band">
   <div class="stats-inner">
-    <div class="stat-item" data-reveal><div class="stat-n">4+</div><div class="stat-l">Live Products Shipped</div></div>
+    <div class="stat-item" data-reveal><div class="stat-n">6+</div><div class="stat-l">Live Products Shipped</div></div>
     <div class="stat-item" data-reveal><div class="stat-n">3</div><div class="stat-l">Years Building</div></div>
     <div class="stat-item" data-reveal><div class="stat-n">AI</div><div class="stat-l">Agents & Tools</div></div>
     <div class="stat-item" data-reveal><div class="stat-n">100%</div><div class="stat-l">Client Satisfaction</div></div>
